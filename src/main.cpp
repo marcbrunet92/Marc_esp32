@@ -19,6 +19,12 @@ void setup() {
   WiFi.softAP(AP_SSID, AP_PASS);
 
   start_web_interface();
+
+#if DEAUTH_TYPE_ALL_BOOT
+Serial.println("DEAUTH_TYPE_ALL_BOOT is enabled. Starting deauth attack...");
+uint16_t reason = 1; // Raison arbitraire (par exemple, 1)
+start_deauth(0, DEAUTH_TYPE_ALL, reason);
+#endif
 }
 
 void loop() {
