@@ -47,9 +47,6 @@ void handle_root() {
   html.replace("{{NETWORK_ROWS}}", networkRows);
   html.replace("{{ELIMINATED_STATIONS}}", String(eliminated_stations));
 
-  String reasonCodes = "<tr><td>0</td><td>Reserved.</td></tr>"; // Ajoutez les autres codes ici
-  html.replace("{{REASON_CODES}}", reasonCodes);
-
   server.send(200, "text/html", html);
 }
 
