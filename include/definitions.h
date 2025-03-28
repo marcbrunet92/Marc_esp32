@@ -4,7 +4,7 @@
 #define AP_SSID "MarcMarc"
 #define AP_PASS "AAAAA00000"
 #define LED 2
-#define SERIAL_DEBUG
+#define SERIAL_DEBUG 
 #define CHANNEL_MAX 13
 #define NUM_FRAMES_PER_DEAUTH 16
 #define DEAUTH_BLINK_TIMES 2
